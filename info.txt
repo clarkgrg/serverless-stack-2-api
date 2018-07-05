@@ -11,12 +11,14 @@ endpoints:
   GET - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes
   PUT - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes/{id}
   DELETE - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes/{id}
+  POST - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/billing
 functions:
   create: notes-app-2-api-dev-create
   get: notes-app-2-api-dev-get
   list: notes-app-2-api-dev-list
   update: notes-app-2-api-dev-update
   delete: notes-app-2-api-dev-delete
+  billing: notes-app-2-api-dev-billing
 
 Stack Outputs
 AttachmentsBucketName: notes-app-2-api-dev-attachmentsbucket-niyuq81pvppk
