@@ -1,0 +1,38 @@
+Service Information
+service: notes-app-2-api
+stage: dev
+region: us-east-2
+stack: notes-app-2-api-dev
+api keys:
+  None
+endpoints:
+  POST - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes
+  GET - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes/{id}
+  GET - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes
+  PUT - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes/{id}
+  DELETE - https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev/notes/{id}
+functions:
+  create: notes-app-2-api-dev-create
+  get: notes-app-2-api-dev-get
+  list: notes-app-2-api-dev-list
+  update: notes-app-2-api-dev-update
+  delete: notes-app-2-api-dev-delete
+
+Stack Outputs
+AttachmentsBucketName: notes-app-2-api-dev-attachmentsbucket-niyuq81pvppk
+UserPoolClientId: 7shgt6i1mhl0a86ej3qd8nuch9
+UserPoolId: us-east-2_E4rkiVpOZ
+DeleteLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:319146675883:function:notes-app-2-api-dev-delete:1
+CreateLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:319146675883:function:notes-app-2-api-dev-create:1
+GetLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:319146675883:function:notes-app-2-api-dev-get:1
+UpdateLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:319146675883:function:notes-app-2-api-dev-update:1
+IdentityPoolId: us-east-2:5caf3de4-4a14-4448-a954-2fbf9915bfb4
+ListLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:319146675883:function:notes-app-2-api-dev-list:1
+ServiceEndpoint: https://59igt6yskc.execute-api.us-east-2.amazonaws.com/dev
+ServerlessDeploymentBucketName: notes-app-2-api-dev-serverlessdeploymentbucket-17j79pvud5i59
+
+
+Stripe Keys
+PUblishable: pk_test_DDAWQreEuCOgiybmkgsh1oJg
+Secret: sk_test_PmE9kdkOd4zZgNaOpP2okEoa
+
